@@ -34,11 +34,11 @@ npm run client
 
 - [ ] Copying link faster
 
-What is this built on?
+## What is this built on?
 
 - ReactJS for the frontend & NodeJS for the backend.
 
-Bugs?
+## Bugs?
 
 Feel free to make an issue about any particular errors or bugs such as UI bugs, or functionality bugs.
 
