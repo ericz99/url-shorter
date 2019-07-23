@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dfe7f0;
+}
+
+a {
+  text-decoration: none;
+  color: #283593;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.container {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer {
+  background: #ffffff;
+  min-width: 80%;
+  padding: 2.2em 1.8rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.footer p span {
+  color: red;
+  padding-left: 5px;
+}
+
+.form {
+  margin: 25px 0;
+  min-width: 80%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: #ffffff;
+  padding: 1.3rem 1.8rem;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+}
+
+input {
+  background: #dbdbdb;
+  padding: 1.2rem 1.8rem;
+  width: 100%;
+  flex: 1 1 75%;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.btnSubmit {
+  background: #448aff;
+  color: #ffffff;
+  flex: 1 1 25%;
+  margin-left: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 750;
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+.interceptor {
+  margin-bottom: 25px;
+  min-width: 80%;
+  display: flex;
+}
+
+.interceptor > span {
+  padding: 0 2rem;
+}
+
+.interceptor span:nth-child(1) {
+  flex: 1 1 50%;
+  text-align: right;
+  font-size: 24px;
+}
+
+.interceptor span:nth-child(2) {
+  flex: 1 1 50%;
+  text-align: left;
+  font-size: 24px;
+}
+
+.output {
+  min-width: 80%;
+  margin-bottom: 25px;
+}
+
+.url-list {
+  list-style: none;
+  padding: 1.3rem 1.8rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.page-numbers {
+  list-style: none;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-numbers li {
+  font-weight: 650;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #000000;
+  display: inline-block;
+  padding: 8px 14px;
+  background: #ffffff;
+  margin: 0 5px;
+}
+
+.active {
+  color: blue;
+}
+
+.error {
+  border: 2px solid #f50057;
+}
+
+.invalid--text {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 750;
+  color: #f50057;
+  position: absolute;
+  top: 7px;
+  right: 25px;
+}
+
+.link {
+  display: flex;
+  background: #dbdbdb;
+  padding: 1.2rem 1.8rem;
+  margin: 25px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.link:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.right {
+  flex: 1 1 30%;
+  text-align: right;
+}
+
+.longLink {
+  flex: 1 1 70%;
+  align-self: center;
+}
+
+.btnCopy {
+  background: #00e676;
+  color: #ffffff;
+  margin-left: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 750;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  transition: all 0.4 ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+
+  .footer {
+    min-width: 100%;
+  }
+
+  .btnSubmit {
+    margin-left: 0;
+    margin-top: 25px;
+    padding: 1.2rem 1.8rem;
+  }
+}
